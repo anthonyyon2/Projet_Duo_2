@@ -6,6 +6,28 @@ function filtrerCommentairesCritiques() {
 //Exercice 2 -Partie 1 et 2
 function miseAJourVilles() {
   console.log("mise à jour de villes");
+  var phrase = document.getElementById("villes"); // récupère phrase
+  var tab = phrase.textContent.split(","); // créé tableau dans lequel les éléments sont les villes
+
+  /*while ( tab.length != 0) {
+    var first_element = tab.shift();
+    console.log(tab.length);
+    console.log(first_element);
+    //tab.push(first_element);
+    console.log(tab);
+  }
+  document.getElementById("infoBande").innerHTML = "<h1>Toutes les villes sont passées ! Au revoir ! </h1>"
+  */
+ var i = 0
+  while (i < 10) {
+        var first_element = tab.shift();
+        console.log(tab);
+        tab.push(first_element);
+        console.log(tab.join(","));
+        phrase.innerText = tab.join(",");
+        i++;
+        
+  }
 }
 
 function demarrerDefilementVilles() {
