@@ -14,6 +14,7 @@ function miseAJourVilles() {
         tab.push(first_element);
         console.log(tab.join(","));
         phrase.innerText = tab.join(",");
+        /*recu ou pas ?*/
 }
 
 function demarrerDefilementVilles() {
